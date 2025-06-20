@@ -72,7 +72,7 @@ The notebook includes a complete training pipeline:
     - Mixed precision training for improved performance
     - Gradient clipping for training stability
     - Cosine learning rate scheduling with warmup
-5. **Evaluation**: Generates captions and computes evaluation metrics (BLEU, CIDEr)
+5. **Evaluation**: Generates captions and computes evaluation metrics
 
 ### Inference
 
@@ -139,15 +139,3 @@ xray/
 - Training uses teacher forcing with the ground truth captions
 - The feature projection approach is simple but effective for this domain
 - Model checkpoints can be saved and loaded using PyTorch's standard methods
-
-## Future Improvements
-
-- Implement attention mechanisms for better visual-textual alignment
-- Experiment with different pre-trained vision models (ViT, DeiT)
-- Add more sophisticated evaluation metrics (METEOR, ROUGE-L)
-- Implement cross-validation for robust evaluation
-- Add data augmentation techniques for better generalization
-
-## Citation
-
-If you use this code or approach in your research, please cite the relevant papers for ResNet-50, GPT-2, and the Indiana University Chest X-rays Dataset.
